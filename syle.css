@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+body{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.left-side{
+    display: flex;
+}
+
+.left-side ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.left-side ul a{
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    color: var(--grayish-violet);
+    cursor: pointer;
+}
+.right-side{
+    margin-left: 0.5rem;
+}
+
+.right-side ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.right-side ul a{
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    color: var(--grayish-violet);
+    cursor: pointer;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 30rem;
+}
+.content h2{
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.content p{
+    color: var(--grayish-violet);
+    margin: 0.5rem;
+}
+
+.content .btn{
+    background-color: var(--cyan);
+    padding: 0.5rem 1.7rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+}
+
+.image img{
+    width: 85%;
+}
+
+input{
+    padding: 0.6rem 0.3rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    margin: 0.5rem;
+    flex: 1;
+}
+
+.input-box{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-violet);
+    padding: 1rem 1.5rem;
+    position: relative;
+    border-radius: 0.3rem;
+
+}
+.input-btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--cyan);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.services{
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content{
+    max-width: 30rem;
+}
+
+.service-content p{
+    color: var(--grayish-violet);
+}
+
+.cards{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 2rem;
+    max-width: 20rem;
+    background: #eff1f7;
+    padding: 1rem 0.2rem;
+    border-radius: 0.3rem;
+
+}
+.cards p{
+    color: rgb(52, 44, 44)
+}
+
+.boost{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-violet);
+    padding: 1.8rem;
+    position: relative;
+    gap: 2rem;
+    color: white;
+
+}
+
+.boost .btn{
+    background-color: var(--cyan);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+}
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--very-dark-blue);
+}
+
+.footer-links{
+    margin-top: 2rem;
+}
+
+ul li{
+    color: var(--grayish-violet);
+    margin: 0.2rem 0;
+    list-style: none;
+
+}
+ul :nth-child(1) {
+    color: white;
+    font-weight: bold;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0.5rem;
+    margin-top: 2rem;
+}
+
+.logo{
+    margin-top: 2rem;
+}
+
+.result .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    background-color: white;
+    margin-inline: auto;
+
+}
+
+.newUrl-btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    background: var(--cyan);
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+
