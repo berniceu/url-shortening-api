@@ -19,6 +19,7 @@
 body{
     font-size: 15px;
     font-family: Poppins, sans-serif;
+    margin-inline: auto;
 }
 
 header{
@@ -65,16 +66,26 @@ header{
     color: var(--grayish-violet);
     cursor: pointer;
 }
+.right-side .login:hover{
+    color: black;
+}
 
 .right-side .sign-up{
-    background-color: var(--cyan);
+    background: transparent;
+    border: solid 2px cyan;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    outline: none;
-    border: none;
-    color: white;
+    
+    color: var(--grayish-violet);
     font-size: 1rem;
     border-radius: 1.5rem;
+}
+
+.right-side .sign-up:hover{
+    background-color: var(--cyan);
+    color: white;
+    border: none;
+    outline: none;
 }
 
 
@@ -83,12 +94,14 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .content{
     max-width: 30rem;
+    text-align: center;
 }
-.content h2{
+.content h1{
     font-size: 3rem;
     margin: 0.5rem;
 }
@@ -109,6 +122,7 @@ section{
     font-size: 1.2rem;
     border-radius: 1.2rem;
 }
+
 
 .image img{
     width: 85%;
@@ -134,6 +148,8 @@ input{
     padding: 1rem 1.5rem;
     position: relative;
     border-radius: 0.3rem;
+    width: 85%;
+    
 
 }
 .input-btn{
@@ -178,24 +194,31 @@ input{
 .cards p{
     color: rgb(52, 44, 44)
 }
+.card img{
+    background-color: var(--dark-violet);
+    border-radius:50%;
+    padding: 1rem;
+    
+}
 .card{
     margin: 2rem;
     max-width: 20rem; 
 }
 
 .card-1{
-    background: #eff1f7;
+    background: white;
     padding: 1rem 0.2rem;
     border-radius: 0.3rem;
 
+
 }
 .card-2{
-    background: #eff1f7;
+    background: white;
     padding: 1rem 0.2rem;
     border-radius: 0.3rem;
 }
 .card-3{
-    background: #eff1f7;
+    background: white;
     padding: 1rem 0.2rem;
     border-radius: 0.3rem;
 }
@@ -209,6 +232,7 @@ input{
     position: relative;
     gap: 2rem;
     color: white;
+    background-image: url("images/bg-boost-desktop.svg");
 
 }
 
@@ -255,7 +279,7 @@ ul :nth-child(1) {
 }
 
 
-.logo{
+footer .logo{
     margin-top: 2rem;
 }
 
@@ -284,8 +308,12 @@ ul :nth-child(1) {
 
 .result{
     display: flex;
+    flex-direction: column;
+    
+
 
 }
+
 
 
 
