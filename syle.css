@@ -153,10 +153,13 @@ input{
     text-align: center;
     display: flex;
     flex-direction: column;
+    background: #eff1f7
 }
 
 .service-content{
     max-width: 30rem;
+    margin-top: 2rem;
+    
 }
 
 .service-content p{
@@ -169,6 +172,7 @@ input{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    
 
 }
 .cards p{
@@ -275,6 +279,11 @@ ul :nth-child(1) {
     cursor: pointer;
     outline: none;
     border: none;
+}
+
+.result{
+    display: flex;
+
 }
 
 
