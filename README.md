@@ -14,10 +14,12 @@ Screenshot
 
 
 
+
+
 Links
 
-Solution URL: Add solution URL here
-Live Site URL: Add live site URL here
+Solution URL: (https://github.com/berniceu/url-shortening-api)
+Live Site URL: (https://berniceu.github.io/url-shortening-api/)
 
 Built with:
 -Semantic HTML5 markup
@@ -30,10 +32,10 @@ Built with:
 
 What I learned:
 
-I gained more knowledge about promises and callback functions in javascript, as well as some new css properties.
+I gained more knowledge about promises and callback functions in javascript and some new css properties.
 
 Continued development
--I want to learn more about animations and translations to make website more appealing.
+-I want to learn more about animations and translations to make the website more appealing.
 -Also work on mobile display
 
 
