@@ -99,7 +99,6 @@ section{
 
 .content{
     max-width: 30rem;
-    text-align: center;
 }
 .content h1{
     font-size: 3rem;
@@ -148,7 +147,8 @@ input{
     padding: 1rem 1.5rem;
     position: relative;
     border-radius: 0.3rem;
-    width: 85%;
+    width: 50%;
+    background-image: url(images/bg-boost-desktop.svg);
     
 
 }
