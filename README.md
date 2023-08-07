@@ -13,6 +13,7 @@ Screenshot
 
 
 
+![screenshot](https://github.com/berniceu/url-shortening-api/assets/113672733/67decf54-c36e-4a9f-b8a8-f701356cffcc)
 
 
 
