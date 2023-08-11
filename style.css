@@ -282,15 +282,32 @@ ul :nth-child(1) {
 footer .logo{
     margin-top: 2rem;
 }
-
-.result .item{
+.result{
     display: flex;
-    justify-content: space-between;
+    padding: 0.6rem 0.3rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin: 0.5rem;
+    flex: 1;
+
+}
+.result .item{
+    flex-direction: row;
+    background-color: var(--gray);
+    display: flex;
+    margin-top: 1.5rem;
+    display: flex;
     align-items: center;
-    flex-direction: column;
-    background-color: white;
-    background-color: white;
-    margin-inline: auto;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+    border-radius: 0.3rem;
+    width: 50%;
+    
+
+    
 
 }
 
@@ -304,6 +321,7 @@ footer .logo{
     cursor: pointer;
     outline: none;
     border: none;
+    
 }
 
 .result{
