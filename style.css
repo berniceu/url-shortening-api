@@ -25,13 +25,14 @@ body{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 1.2rem;
+    margin: 1.5rem;
     margin-bottom: 3rem;
+    justify-content: space-between;
 }
 
 .left-side{
     display: flex;
+    justify-content: flex-start;
 }
 
 .left-side ul{
@@ -52,12 +53,14 @@ header{
 }
 .right-side{
     margin-left: 0.5rem;
+    
 }
 
 .right-side ul{
     display: flex;
     align-items: center;
     list-style: none;
+    
 }
 
 .right-side ul a{
@@ -89,18 +92,16 @@ header{
 }
 
 
-section{
+.section-2{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
    
 }
 
 .content{
-    width: 100%;
+    
     max-width: 30rem;
-    flex-shrink: 1;
     padding: 1rem;
     flex: 1;
     box-sizing: border-box;
@@ -348,7 +349,15 @@ footer .logo{
 
 
 }
+.footer-links a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 100;
+}
 
+.footer-links a:hover{
+    text-decoration: underline;
+}
 
 
 
