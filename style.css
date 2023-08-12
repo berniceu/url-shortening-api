@@ -72,8 +72,8 @@ header{
 
 .right-side .sign-up{
     background: transparent;
-    border: solid 2px cyan;
-    padding: 0.5rem 1rem;
+    /*border: solid 2px cyan;*/
+    padding: 0.2rem 1rem;
     cursor: pointer;
     
     color: var(--grayish-violet);
@@ -98,7 +98,12 @@ section{
 }
 
 .content{
+    width: 100%;
     max-width: 30rem;
+    flex-shrink: 1;
+    padding: 1rem;
+    flex: 1;
+    box-sizing: border-box;
 }
 .content h1{
     font-size: 3rem;
@@ -125,6 +130,18 @@ section{
 
 .image img{
     width: 85%;
+}
+
+@media screen and (max-width: 768px){
+    .content h1{
+        font-size: 2rem;
+    }
+    .content .btn{
+        font-size: 1rem;
+    }
+    .image img{
+        width: 100%;
+    }
 }
 
 input{
