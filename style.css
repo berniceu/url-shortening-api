@@ -212,6 +212,14 @@ header{
     border: none;
     outline: none;
 }
+@media screen and(max-width: 768px) {
+    .input-box{
+        align-items: center;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+}
 
 
 .services{
