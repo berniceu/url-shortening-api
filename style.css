@@ -28,8 +28,7 @@ header{
     margin: 1.5rem;
     margin-bottom: 3rem;
     justify-content: space-between;
-    gap: 2.3rem;
-    position: relative;
+    padding-inline: 80px;
 }
 
 .left-side{
@@ -114,10 +113,18 @@ header{
 
 
 .section-2{
-    width: 100%;
+
     display: flex;
+    justify-content: space-around;
+    padding: 80px;
 
    
+}
+
+
+.img-container.image{
+    max-width: 100%;
+    height: auto;
 }
 
 .content{
@@ -312,7 +319,6 @@ header{
     }
 }
 .boost{
-    margin-top: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -342,6 +348,7 @@ footer{
     align-items: flex-start;
     justify-content: space-between;
     background-color: var(--very-dark-blue);
+    padding-inline: 80px;
 }
 
 .footer-links{

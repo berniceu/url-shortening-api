@@ -17,24 +17,27 @@ form.addEventListener('submit', (e) => {
 
 async function shortenUrl(url) {
     try {
-        const api = await fetch (`https://api.shrtco.de/v2/shorten?url=${url}`);
-        const data = await api.json();
-        if (data.ok) {
-            const newUrl = document.createElement("div");
-            newUrl.classList.add("item");
-            newUrl.innerHTML = `<p class="original-link"> ${url} </p>
-            <p class="shortened-link">${data.result.short_link}</p>
-            <button class="newUrl-btn">Copy</button>`;
-            result.prepend(newUrl);
-            const copyBtn = result.querySelector(".newUrl-btn");
-            copyBtn.addEventListener("click", () =>{
-                navigator.clipboard.writeText(copyBtn.previousElementSibling.textContent);
-
-            });
-            input.value = "";
-        } else {
+        const response = await fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(url)}`);
+        if (!response.ok) {
             throw new Error("Shortening URL failed");
         }
+        const shortUrl = await response.text();
+
+        const newUrl = document.createElement("div");
+        newUrl.classList.add("item");
+        newUrl.innerHTML = `
+            <p class="original-link">${url}</p>
+            <p class="shortened-link">${shortUrl}</p>
+            <button class="newUrl-btn">Copy</button>
+        `;
+        result.prepend(newUrl);
+
+        const copyBtn = newUrl.querySelector(".newUrl-btn");
+        copyBtn.addEventListener("click", () => {
+            navigator.clipboard.writeText(shortUrl);
+        });
+
+        input.value = "";
     } catch (err) {
         console.log(err);
     }
